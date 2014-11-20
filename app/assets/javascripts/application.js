@@ -13,9 +13,12 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
+//= require foundation
 //= require moment
 
 //= require fullcalendar
 
 //= require turbolinks
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
