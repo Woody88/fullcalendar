@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  root 'staticpages#home'
-  get 'staticpages/home'
+ 
+
+  resources :profiles
 
   devise_for :users
-  resources :users
-
+  root 'staticpages#home'
+  get 'staticpages/home'
   resources :events
-
   get 'calendar' => 'calendar#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
